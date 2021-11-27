@@ -1,0 +1,511 @@
+/* Підключення  шрифтів */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&family=Poppins:wght@400;500;700;900&display=swap");
+
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+li {
+    list-style: none;
+}
+a,
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+img {
+    vertical-align: top;
+}
+html,
+body {
+    height: 100%;
+}
+body {
+    line-height: 1;
+    overflow-x: hidden;
+}
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    /* для фіксування шапки і підвалу */
+    display: flex;
+    flex-direction: column;
+}
+.header,
+.footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #f2726f;
+}
+/* ------------------------------ */
+.header {
+    margin: 0 0 100px 0;
+}
+.main {
+    flex-grow: 1; /* для фіксування шапки і підвалу, дозволяємо збільшуватися */
+}
+
+/* Обмежуючий контейнер за допомогою складного селектору*/
+[class*="__container"] {
+    box-sizing: content-box;
+    max-width: 1020px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.doggie{
+    font-family: "Roboto";
+    font-style: normal;
+    color: #FFFFFF;
+    margin-bottom: 100px;
+    background: url(../img/doggie_image/blob.svg) 3% 50% no-repeat, url(../img/doggie_image/stylize_circles.svg) 10% 50% no-repeat, url(../img/doggie_image/phone_image.jpg) 0 0 / 100% no-repeat;
+}
+.doggie__container{
+    padding: 130px 0 130px 0;
+    display: flex;
+    gap: 111px 130px;
+    align-items: center;
+}
+.doggie__form{
+    max-width: 585px;
+    padding: 76px 58px;
+    background: #5D62B5;
+    border-radius: 40px;
+}
+.form-doggie__title{
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+.doggie__form h2{
+    margin-bottom: 43px;
+}
+.form-body__item::placeholder{
+    color: #FFFFFF;
+}
+.form-doggie__textarea::placeholder{
+    color: #FFFFFF;
+}
+.form-body__items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 22px;
+}
+.form-body__item{
+    flex: 0 1 224px;
+    padding: 17px 24px;
+    border: 2px solid #FFFFFF;
+    border-radius: 10px;
+    background: #5D62B5;
+}
+.form-doggie__body{
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+.form-doggie__textarea{
+    padding: 17px 0 0 24px;
+    min-height: 180px;
+    border: 2px solid #FFFFFF;
+    border-radius: 10px;
+    background: #5D62B5;
+}
+.form-doggie__button{
+    flex: 0 1 48px;
+    padding: 18px 34px;
+    align-self: flex-end;
+    font-family: "Roboto";
+    font-style: normal;
+    font-size: 12px;
+    line-height: 2;
+    text-align: center;
+    font-weight: 900;
+    letter-spacing: 0.15px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border-radius: 2px;
+    background-color: #F2726F;
+    cursor: pointer;
+}
+
+.doggie__body{
+    display: flex;
+    flex-direction: column;
+    max-width: 324px;
+    text-align: center;
+    font-weight: 900;
+    gap: 46px;
+}
+.body-doggie__title{
+    font-size: 30px;
+    line-height: 1.2;
+}
+.body-doggie__sum{
+    font-size: 96px;
+    line-height: 0.58;
+}
+.body-doggie__text{
+    font-size: 19px;
+    line-height: 1.37;
+}
+/* -------------- */
+.techstore{
+    font-family: "Poppins";
+    font-style: normal;
+}
+/* --------- */
+.registerform__container{
+    margin-bottom: 100px;
+}
+.registerform__block{
+    max-width: 564px;
+    padding: 37px 57px 40px 37px;
+    margin: 0 auto;
+    background: #F5F7FF;
+}
+.registerform__title{
+    font-size: 18px;
+    line-height: 1.5px;
+    margin-bottom: 22px;
+}
+.registerform__subtitle{
+    font-size: 14px;
+    line-height: 2.14;
+}
+.registerform__items{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.items-register__item{
+    display: flex;
+    flex-direction: column;
+}
+.items-register__label{
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 2.1;
+}
+.items-register__span{
+    color: #C94D3F;
+}
+.items-register__input{
+    min-height: 50px;
+    padding-left: 17px;
+    border: 1px solid #A2A6B0;
+    border-radius: 4px;
+    background: #FFFFFF;
+}
+.items-register__input::placeholder{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.43;
+    color: #A2A6B0;
+}
+.registerform__button{
+    min-height: 50px;
+    min-width: 151px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+    cursor: pointer;
+    color: #FFFFFF;
+    background: #0156FF;
+    border-radius: 50px;
+    margin: 30px 23px 0 0;
+}
+.registerform__link{
+    font-size: 14px;
+    line-height: 1.43;
+    text-align: center;
+    color: #0156FF;
+}
+
+
+/* --------- */
+.summary__container{
+    margin-bottom: 100px;
+}
+.summaryform__block{
+    margin: 0 auto;
+    padding: 17px 30px;
+    max-width: 446px;
+    background: #F5F7FF;
+}
+.summary__header h2{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 18px;
+}
+.summary__title{
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 12px;
+}
+.summary__subtitle{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.17;
+    color: #666666;
+    margin-bottom: 12px;
+}
+.summary__select, .summary__state, .summary__zip, .summary__discount{
+    display: flex;
+    flex-direction: column;
+}
+.summary__label{
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 2.1;
+}
+.summary__item input, select{
+    border: 1px solid #A2A6B0;
+    border-radius: 4px;
+    background: #FFFFFF;
+    flex: 0 1 50px;
+    padding: 0 0 0 17px;
+}
+.summary__button{
+    margin-top: 17px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #0156FF;
+    border: 2px solid #0156FF;
+    border-radius: 50px;
+    text-align: center;
+    flex: 0 1 50px;
+    cursor: pointer;
+}
+.summary__items{
+    display: flex;
+    flex-direction: column;
+}
+.summary__item{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 0 0 17px 0;
+}
+.summary__delivery{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: relative;
+    margin: 0 0 30px 0;
+}
+.delivery__title{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 2.1;
+}
+.delivery__lable{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.43;
+    display: inline-flex;
+    column-gap: 8px;
+    cursor: pointer;
+    position: relative
+}
+.delivery__input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+.delivery__lable::before{
+    content: "";
+    flex: 0 0 21px;
+    /* При заданні ширини за доп. weight - кружок сплюснутий. 
+    label - flex елемент, тому через ун. запис flex задаєм розмір */
+    height: 21px;
+    background-color: #fff;
+    border: 2px solid #0156FF;
+    border-radius: 50%;
+}
+.delivery__input:checked + .delivery__lable::after{
+    transform: scale(1);
+}
+.delivery__lable::after{
+    content: "";
+    width: 13px;
+    height: 13px;
+    background-color: #0156FF;
+    position: absolute;
+    border-radius: 50%;
+    left: 4px;
+    top: 4px;
+    transform: scale(0);
+}
+.shipping__delivery{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: relative
+}
+.del__title{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 2.1;
+}
+.del__lable{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.43;
+    display: inline-flex;
+    column-gap: 8px;
+    cursor: pointer;
+    position: relative
+}
+.del__input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+.del__lable::before{
+    content: "";
+    flex: 0 0 21px;
+    height: 21px;
+    background-color: #fff;
+    border: 2px solid #0156FF;
+    border-radius: 50%;
+}
+.del__input:checked + .del__lable::after{
+    transform: scale(1);
+}
+.del__lable::after{
+    content: "";
+    width: 13px;
+    height: 13px;
+    background-color: #0156FF;
+    position: absolute;
+    border-radius: 50%;
+    left: 4px;
+    top: 4px;
+    transform: scale(0);
+}
+/* ------------ */
+.checkout__container{
+    margin-bottom: 50px;
+}
+.checkout__block{
+    margin: 0 auto;
+    max-width: 565px;
+}
+.checkout__header{
+    display: flex;
+    align-items: center;
+    line-height: 1.5;
+    gap: 30px;
+    margin-bottom:43px;
+}
+.checkout__header h2{
+    font-weight: 600;
+    font-size: 32px;
+}
+.checkout__link{
+    font-weight: 600;
+    text-align: center;
+    min-height: 50px;
+    font-size: 14px;
+    color: #0156FF;
+    border: 2px solid #0156FF;
+    border-radius: 50px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 77px;
+}
+.shipping__form{
+    max-width: 565px;
+    display: flex;
+    flex-direction: column;
+}
+.shipping__title{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 0 0 14px 0;
+}
+.shipping__line{
+    width: 100%;
+    margin: 0 0 25px 0;
+    border: 0.1px solid #CACDD8;
+/* background-color: #CACDD8; */
+    /* line-height: 1; */
+    /* font-size: 0; */
+    /* border мав незаповнену (білу) середину. Допомогло зменшення ширини самого border */
+}
+
+.form__items{
+    display: flex;
+    flex-direction: column;
+    /* gap: 12px; */
+}
+.item__form{
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 32px 0;
+}
+.form__items input:not(:last-child){
+    margin: 0 0 11px 0;
+}
+.form__items select:not(:last-child){
+    margin: 0 0 11px 0;
+}
+.form__label{
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 2.1;
+}
+.red-star{
+    color: #C94D3F;
+}
+.form__items input{
+    background: #FFFFFF;
+    border: 1px solid #A2A6B0;
+    border-radius: 4px;
+    flex: 0 1 50px;
+}
+.shipping__note{
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 2.1;
+    margin: 0 0 20px 0;
+    color: #666666;
+}
+.shipping__item{
+    display: flex;
+    flex-direction: column;
+}
+.item__user-state, .item__user-country{
+    font-size: 14px;
+    line-height: 1.43;
+    color: #000000;
+    padding: 0 0 0 17px;
+}
